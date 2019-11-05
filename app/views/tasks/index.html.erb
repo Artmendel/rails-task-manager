@@ -1,0 +1,13 @@
+<title>Main page</title>
+<h1>Welcome to INDEX!</h1>
+
+<!-- ERB -> Embedded Ruby -->
+<p><%= Time.now.strftime('%B / %d') %></p>
+
+<ul>
+  <% @tasks.each do |task| %>
+
+    <li><%= task['title'] %></li>
+
+  <% end %>
+</ul>
